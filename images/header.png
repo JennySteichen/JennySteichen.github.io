@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg18"
+   width="477.12"
+   height="138.88"
+   viewBox="0 0 477.12 138.88"
+   sodipodi:docname="header.png"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs22">
+    <rect
+       x="13.644878"
+       y="52.470158"
+       width="50.57397"
+       height="44.02456"
+       id="rect917" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.4102951"
+     inkscape:cx="215.32633"
+     inkscape:cy="69.286121"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g24">
+    <text
+       xml:space="preserve"
+       style="font-size:35.026px;font-family:aakar;-inkscape-font-specification:'aakar, Normal';opacity:0.56;fill:#c6af10;stroke:#34689a;stroke-width:2.797;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="text923"><textPath
+         xlink:href="#path2016"
+         id="textPath2018"><tspan
+           id="tspan921"
+           style="stroke:#34689a;stroke-width:2.797;stroke-dasharray:none;stroke-opacity:1">Jenny Steichen</tspan></textPath></text>
+    <path
+       style="opacity:0.56;fill:#502d16;fill-opacity:0.0237202;stroke:#9a3445;stroke-width:3.78515;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:0.01922125"
+       id="path2016"
+       sodipodi:type="arc"
+       sodipodi:cx="213.61504"
+       sodipodi:cy="79.196671"
+       sodipodi:rx="164.98688"
+       sodipodi:ry="33.475021"
+       sodipodi:start="3.7246008"
+       sodipodi:end="5.2476371"
+       sodipodi:arc-type="slice"
+       d="M 75.882286,60.767411 A 164.98688,33.475021 0 0 1 297.76733,50.403395 l -84.15229,28.793276 z" />
+    <path
+       style="opacity:0.56;fill:#502d16;fill-opacity:0.0237202;stroke:#9a3445;stroke-width:4.40088;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:0.01198787"
+       id="path2016-3"
+       sodipodi:type="arc"
+       sodipodi:cx="266.01953"
+       sodipodi:cy="124.70027"
+       sodipodi:rx="225.23882"
+       sodipodi:ry="33.146664"
+       sodipodi:start="3.7246008"
+       sodipodi:end="5.4201755"
+       sodipodi:arc-type="slice"
+       d="M 77.987841,106.45179 A 225.23882,33.146664 0 0 1 234.58882,91.877919 225.23882,33.146664 0 0 1 412.45935,99.515342 L 266.01953,124.70027 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.9419px;font-family:aakar;-inkscape-font-specification:'aakar, Normal';opacity:0.56;fill:#c6af10;stroke:#349a6c;stroke-width:2.197;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="text923-6"><textPath
+         xlink:href="#path2016-3"
+         id="textPath2319"><tspan
+           id="tspan921-5"
+           style="stroke:#349a6c;stroke-width:2.197;stroke-dasharray:none;stroke-opacity:1">Data Science Portfolio</tspan></textPath></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Background">
+    <rect
+       style="opacity:0.56;fill:#502d16;fill-opacity:0.0237202;stroke:#9a3445;stroke-width:2.197;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:0.0192212"
+       id="rect2481"
+       width="475.33392"
+       height="137.45587"
+       x="0.40688497"
+       y="1.1210102"
+       rx="3.8808532"
+       ry="2.555371" />
+  </g>
+</svg>
