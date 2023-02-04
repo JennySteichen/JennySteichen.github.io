@@ -2,8 +2,9 @@
 
 [![Header](images/profile_pic_1.jpg "Header")](https://www.linkedin.com/in/jenny-steichen/)
 
+<!---
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" />
-
+--->
 My name is Jenny Steichen and I'm a Data Scientist.You can find me on [![LinkedIn][3.2]][3].
 
 ## 🔧 Technologies & Tools
@@ -16,7 +17,8 @@ My name is Jenny Steichen and I'm a Data Scientist.You can find me on [![LinkedI
 ![](https://img.shields.io/badge/Tools-PyCharm-informational?style=flat&logo=docker&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-Excel-informational?style=flat&logo=docker&logoColor=white&color=2bbc8a)
 
-
+<!-- 
+----------------------------------------------------------------------------------------------------
 ## &#x1f4c8; GitHub Stats
 
 <a href="https://github.com/MartinHeinz/MartinHeinz">
@@ -34,6 +36,8 @@ My name is Jenny Steichen and I'm a Data Scientist.You can find me on [![LinkedI
 <a href="https://github.com/MartinHeinz/go-project-blueprint">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=MartinHeinz&repo=go-project-blueprint&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" />
 </a>    
+---------------------------------------------------------------------------
+-->
 
 <!-- links to social media icons -->
 
