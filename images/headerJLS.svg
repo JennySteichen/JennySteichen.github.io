@@ -7,8 +7,11 @@
    width="477.12"
    height="138.88"
    viewBox="0 0 477.12 138.88"
-   sodipodi:docname="header.png"
+   sodipodi:docname="headerJLS.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   inkscape:export-filename="../a2fc901c/headerJLS.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -16,12 +19,33 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs22">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient13164">
+      <stop
+         style="stop-color:#d89119;stop-opacity:0.75212348;"
+         offset="0"
+         id="stop13160" />
+      <stop
+         style="stop-color:#b97b17;stop-opacity:0;"
+         offset="1"
+         id="stop13162" />
+    </linearGradient>
     <rect
        x="13.644878"
        y="52.470158"
        width="50.57397"
        height="44.02456"
        id="rect917" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13164"
+       id="linearGradient13168"
+       x1="-0.69161505"
+       y1="69.848946"
+       x2="476.83932"
+       y2="69.848946"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="namedview20"
@@ -34,14 +58,29 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="2.4102951"
-     inkscape:cx="215.32633"
-     inkscape:cy="69.286121"
+     inkscape:cx="185.45447"
+     inkscape:cy="77.58386"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Background">
+    <rect
+       style="display:inline;opacity:0.56;fill:url(#linearGradient13168);fill-opacity:1;stroke:#c4651b;stroke-width:2.197;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:0.01280864"
+       id="rect2481"
+       width="475.33392"
+       height="137.45587"
+       x="0.40688497"
+       y="1.1210102"
+       rx="3.8808532"
+       ry="2.555371"
+       inkscape:label="rect2481" />
+  </g>
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -86,19 +125,5 @@
          id="textPath2319"><tspan
            id="tspan921-5"
            style="stroke:#349a6c;stroke-width:2.197;stroke-dasharray:none;stroke-opacity:1">Data Science Portfolio</tspan></textPath></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Background">
-    <rect
-       style="opacity:0.56;fill:#502d16;fill-opacity:0.0237202;stroke:#9a3445;stroke-width:2.197;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:0.0192212"
-       id="rect2481"
-       width="475.33392"
-       height="137.45587"
-       x="0.40688497"
-       y="1.1210102"
-       rx="3.8808532"
-       ry="2.555371" />
   </g>
 </svg>
