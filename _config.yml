@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "About Jenny"
+  name             : "Jenny Steichen"
   avatar           : "portfolioPhoto.jpeg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Data Scientist | Mathematician | Curriculum Developer | Technical Educator"
   location         : "NYC suburbs"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=MTTs7n8AAAAJ&hl=en"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/Jennifer-Steichen"
+  researchgate     : "https://www.researchgate.net/profile/Jennifer-Steichen"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "steichenj"
+  github           : "JennySteichen"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/jenny-steichen/"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
