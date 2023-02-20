@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jenny Steichen's Data Science Portfolio"
+title                    : "Data Science Portfolio"
 title_separator          : "-"
 name                     : &name "Jenny Steichen"
-description              : &description "Data Scientist | Math PhD | Curriculum Architect"
+description              : &description "Data Scientist | Math PhD | Researcher"
 url                      : https://JennySteichen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JennySteichen/JennySteichen.github.io"
@@ -65,11 +65,12 @@ facebook:
 og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : www.linkedin.com# Person or Organization (defaults to Person)
-  name                   : jenny-steichen # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
 
+
+#social:
+#  type                   : www.linkedin.com# Person or Organization (defaults to Person)
+#  name                   : jenny-steichen # If the user or organization name differs from the site's name
+#  links: # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -82,7 +83,7 @@ analytics:
 author:
   name             : "Jenny Steichen"
   avatar           : "portfolioPhoto.jpeg"
-  bio              : "Data Scientist | Mathematician | Curriculum Developer | Technical Educator"
+  bio              : "Data Scientist | Math PhD | Researcher"
   location         : "NYC suburbs"
   employer         :
   pubmed           : 

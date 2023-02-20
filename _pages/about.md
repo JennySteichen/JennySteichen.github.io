@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jenny Steichen's Data Science Portfolio"
+title: "Jenny Steichen"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,15 +8,25 @@ redirect_from:
   - /about.html
 ---
 
-<!--
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV.
--->
+
+Welcome!
 
 About
 ======
 
+<img title="<"Jenny Steichen">" src="images/profile_pic_1.jpg">
 
-Data Science Projects
+I am a Data Scientist/Career Changer.  For the last few years, I've been learning Data Science and 
+Machine Learning from Coursera.  Before this, I took a long break from technical
+work for family care and homeschooling my children.  During that break, I designed K-12 classes,
+especially in math, statistics, and problem solving.  My first data science project
+was quarterly checklists for my students.
+
+Before my break, I did a postdoc at IBM research, earned my PhD in math, worked as an
+engineer, and worked at various other technical jobs.
+
+
+Data Science/ML Projects
 ======
 
 
