@@ -14,7 +14,7 @@ Welcome!
 About
 ======
 
-<img title="<"Jenny Steichen">" src="images/profile_pic_1.jpg">
+<img title=Jenny Steichen" src="images/profile_pic_1.jpg">
 
 I am a Data Scientist/Career Changer.  For the last few years, I've been learning Data Science and 
 Machine Learning from Coursera.  Before this, I took a long break from technical

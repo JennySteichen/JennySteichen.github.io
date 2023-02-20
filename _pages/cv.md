@@ -17,6 +17,7 @@ Education
 * Ph.D in Mathematics, University of Illinois at Urbana-Champaign (UIUC)
 
 See LinkedIn for more information.
+
 <!--
 Work experience
 ======
