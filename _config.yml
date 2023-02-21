@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Data Science Portfolio"
 title_separator          : "-"
-name                     : &name "Jenny Steichen"
+name                     : # &name "Jenny Steichen"
 description              : &description "Data Scientist | Math PhD | Researcher"
 url                      : https://JennySteichen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Jenny Steichen"
-  avatar           : "portfolioPhoto.jpeg"
+  avatar           : "/images/profile_pic_1.jpg"
   bio              : "Data Scientist | Math PhD | Researcher"
   location         : "NYC suburbs"
   employer         :
