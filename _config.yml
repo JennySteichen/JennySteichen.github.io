@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science Portfolio"
+title                    : "ML/Data Science Portfolio"
 title_separator          : "-"
 name                     : # &name "Jenny Steichen"
 description              : &description "Data Scientist | Math PhD | Researcher"
