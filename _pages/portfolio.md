@@ -5,7 +5,6 @@ permalink: /portfolio/
 author_profile: true
 excerpt: "Portfolio"
 redirect_from: 
-  - /portfolio/
   - /portfolio.html
 ---
 
