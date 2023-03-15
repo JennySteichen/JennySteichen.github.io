@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Jenny Steichen"
-  avatar           : "/images/profile_pic_1.jpg"
+  avatar           : "profile_pic_1.jpg"
   bio              : "Data Scientist | Math PhD | Researcher"
   location         : "NYC suburbs"
   employer         :
