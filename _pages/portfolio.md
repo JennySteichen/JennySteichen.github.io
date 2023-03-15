@@ -3,12 +3,13 @@ layout: archive
 title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
+excerpt: "Portfolio"
+redirect_from: 
+  - /portfolio/
+  - /portfolio.html
 ---
 
-{% include base_path %}
+Portfolio
+======
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<img src="/images/iris_data_scatterplot.png">
