@@ -1,10 +1,9 @@
 ---
-permalink: /
+permalink: /about/
 title: "About Me"
-excerpt: "About me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
-  - /about/
   - /about.html
 ---
 I am a Data Scientist/Career Changer.  For the last few years, I've been learning Data Science and 
