@@ -1,10 +1,12 @@
 ---
+permalink: /
 layout: archive
 title: "Portfolio"
-permalink: /portfolio/
-author_profile: true
 excerpt: "Portfolio"
+author_profile: true
+
 redirect_from: 
+  - /portfolio/
   - /portfolio.html
 ---
 
