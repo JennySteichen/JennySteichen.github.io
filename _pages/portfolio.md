@@ -10,6 +10,13 @@ redirect_from:
   - /portfolio.html
 ---
 
+Prompt Engineering Example -- ChatGPT and Mad Libs
+------
+
+<img src="/images/MadLibGenerated.png">
+
+Demostrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
+
 Basic Multi-Layer Perceptron
 ------
 
