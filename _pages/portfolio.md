@@ -10,6 +10,11 @@ redirect_from:
   - /portfolio.html
 ---
 
+This Page is Under Development
+-----
+
+More Projects being added soon.
+
 Prompt Engineering Example -- ChatGPT and Mad Libs
 ------
 
