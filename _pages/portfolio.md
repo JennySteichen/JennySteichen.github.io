@@ -24,7 +24,7 @@ Demostrated the difference a prompt can make with ChatGPT.  Used the example of 
 Student Dashboard
 ------
 
-<img src="/images/student_dashboard.png">
+<img height="200" src="/images/student_dashboard.png">
 
 My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.fods) to measure their quaterly progress.
 Basic Multi-Layer Perceptron
