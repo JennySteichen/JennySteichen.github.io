@@ -27,7 +27,7 @@ Student Dashboard
 
 <img height="150" src="/images/student_dashboard.png">
 
-My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.fods) to measure their quaterly progress.
+My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.xlsx) to measure their quaterly progress.
 
 Basic Multi-Layer Perceptron
 ------
