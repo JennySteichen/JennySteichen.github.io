@@ -16,7 +16,12 @@ Prompt Engineering Example -- ChatGPT and Mad Libs
 <img src="/images/MadLibGenerated.png">
 
 Demostrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
+Student Dashboard
+------
 
+<img src="/images/student_dashboard.png">
+
+My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.fods) to measure their quaterly progress.
 Basic Multi-Layer Perceptron
 ------
 
