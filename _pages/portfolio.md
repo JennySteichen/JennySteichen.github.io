@@ -10,10 +10,15 @@ redirect_from:
   - /portfolio.html
 ---
 
+This Page is Under Development
+-----
+
+More Data Science and Machine Learning Projects being added soon.
+
 Prompt Engineering Example -- ChatGPT and Mad Libs
 ------
 
-<img src="/images/MadLibGenerated.png">
+<img height="150" src="/images/MadLibGenerated.png">
 
 Demostrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
 Student Dashboard
@@ -24,7 +29,7 @@ Student Dashboard
 My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.fods) to measure their quaterly progress.
 Basic Multi-Layer Perceptron
 ------
+  
+<img height="200" src="/images/iris_data_scatterplot.png">
 
-<img src="/images/iris_data_scatterplot.png">
-
-Used a basic [Multi-Layer Perceptron to predict Iris types](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ML%20Iris%20Classification/ML%20Iris%20Classification.ipynb).  Extra details given to illustrate the process to a student.
+Used a basic [Multi-Layer Perceptron to predict Iris types](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ML%20Iris%20Classification.ipynb).  Extra details given to illustrate the process to a student.
