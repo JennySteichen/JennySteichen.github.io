@@ -15,6 +15,13 @@ This Page is Under Development
 
 More Data Science and Machine Learning Projects being added soon.
 
+Titanic Kaggle Competition
+-----
+
+<img height="150" src="/images/titanic.png">
+
+[Ranked in the top 20%](https://www.kaggle.com/competitions/titanic/leaderboard#) of the Kaggle Competition for prediction which passengers survived the Titanic.  My submission included data imputation for missing data, creating new features, comparing different models, and creating ensemble models.
+
 Prompt Engineering Example -- ChatGPT and Mad Libs
 ------
 
@@ -31,7 +38,7 @@ My homeschooling students used [student dashboards](https://github.com/JennyStei
 
 Basic Multi-Layer Perceptron
 ------
-  
+
 <img height="200" src="/images/iris_data_scatterplot.png">
 
 Used a basic [Multi-Layer Perceptron to predict Iris types](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ML%20Iris%20Classification.ipynb).  Extra details given to illustrate the process to a student.
