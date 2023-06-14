@@ -10,24 +10,19 @@ redirect_from:
   - /portfolio.html
 ---
 
-This Page is Under Development
------
-
-More Data Science and Machine Learning Projects being added soon.
-
 Titanic Kaggle Competition
 -----
 
 <img height="150" src="/images/titanic.png">
 
-[Ranked in the top 20%](https://www.kaggle.com/competitions/titanic/leaderboard#) of the Kaggle Competition for prediction which passengers survived the Titanic.  My submission included data imputation for missing data, creating new features, comparing different models, and creating ensemble models.
+[Ranked in the top 7%](https://www.kaggle.com/competitions/titanic/leaderboard) of the Kaggle Competition for prediction which passengers survived the Titanic.  My submission included data imputation for missing data, creating new features, comparing different models, and creating ensemble models.  An [outline of my submission](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/TitanicPredictionNotebook.ipynb) gives an idea of my thinking process.
 
 Prompt Engineering Example -- ChatGPT and Mad Libs
 ------
 
 <img height="150" src="/images/MadLibGenerated.png">
 
-Demostrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
+Demonstrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
 
 Student Dashboard
 ------
@@ -36,9 +31,3 @@ Student Dashboard
 
 My homeschooling students used [student dashboards](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/Student%20Dashboard.xlsx) to measure their quaterly progress.
 
-Basic Multi-Layer Perceptron
-------
-
-<img height="200" src="/images/iris_data_scatterplot.png">
-
-Used a basic [Multi-Layer Perceptron to predict Iris types](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ML%20Iris%20Classification.ipynb).  Extra details given to illustrate the process to a student.
