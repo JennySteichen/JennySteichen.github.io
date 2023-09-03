@@ -10,8 +10,17 @@ redirect_from:
   - /portfolio.html
 ---
 
-Titanic Kaggle Competition
+Generating Music with an LSTM
 -----
+
+<img src="images/sihouette-musical-note-clef.jpg" style="width:450;height:300px;">
+
+We develop a model to [create percussion music](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/CreatePercussionMusic.ipynb).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model] (https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
+
+The type of music depends on a collection of music files in [MIDI format](https://en.wikipedia.org/wiki/MIDI).  Each MIDI file corresponds to a musical piece, which is a series of notes over time.  In this example, we use the [Groove Dataset]() from TensorFlow.  However, in the appendix, we show how to import files from a url.
+
+Titanic Kaggle Competition
+----
 
 <img height="150" src="/images/titanic_feature_elimination.png">
 
