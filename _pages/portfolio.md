@@ -13,7 +13,7 @@ redirect_from:
 Generating Music with an LSTM
 -----
 
-We develop a model to [improvise  percussion music](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusic.ipynb).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model] (https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
+We develop a model to improvise  percussion music ([code download]((https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusic.ipynb)) or [display notebook without output]((https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusicWithoutOutput.ipynb). ) The entire file is too large to display on Github).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model] (https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
 
 The type of music depends on a collection of music files in [MIDI format](https://en.wikipedia.org/wiki/MIDI).  Each MIDI file corresponds to a musical piece, which is a series of notes over time.  In this example, we use the [Groove Dataset]() from TensorFlow.  However, in the appendix, we show how to import files from a url.
 
