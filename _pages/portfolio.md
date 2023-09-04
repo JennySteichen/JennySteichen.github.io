@@ -13,7 +13,7 @@ redirect_from:
 Generating Music with an LSTM
 -----
 
-<img src="images/sihouette-musical-note-clef.jpg" style="width:450;height:300px;">
+<img src="images/LSTM_cell.svg" style="width:450;height:300px;">
 
 We develop a model to [create percussion music](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/CreatePercussionMusic.ipynb).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model] (https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
 
