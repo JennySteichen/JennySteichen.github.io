@@ -12,22 +12,30 @@ redirect_from:
 
 Generating Music with an LSTM
 -----
+<img height="100" src="/images/drum_kit.jpg">
 
 We develop a model to improvise  percussion music ([code download](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusic.ipynb) or [display notebook without output](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusicWithoutOutput.ipynb). The entire file is too large to display on Github).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model](https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
 
-The type of music depends on a collection of music files in [MIDI format](https://en.wikipedia.org/wiki/MIDI).  Each MIDI file corresponds to a musical piece, which is a series of notes over time.  In this example, we use the [Groove Dataset]() from TensorFlow.  However, in the appendix, we show how to import files from a url.
+The type of music depends on a collection of music files in [MIDI format](https://en.wikipedia.org/wiki/MIDI).  Each MIDI file corresponds to a musical piece, which is a series of notes over time.  In this example, we use the [Groove Dataset](https://www.tensorflow.org/datasets/catalog/groove) from TensorFlow.  However, in the appendix, we show how to import files from a url.
 
 Titanic Kaggle Competition
 ----
 
-<img height="150" src="/images/titanic_feature_elimination.png">
+<img height="100" src="/images/titanic_feature_elimination.png">
 
 [Ranked in the top 7%](https://www.kaggle.com/competitions/titanic/leaderboard) of the Kaggle Competition for prediction which passengers survived the Titanic.  My submission included data imputation for missing data, creating new features, comparing different models, and creating ensemble models.  An [outline of my submission](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/TitanicPredictionNotebook.ipynb) gives an idea of my thinking process.
+
+Homeschooling Data Visualization
+----
+
+<img height="100" src="/images/homeschooling_reasons.png">
+
+[Data Visualization](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/HomeschoolingExploration.html) using R and RStudio ([code](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/HomeschoolingExploration.Rmd)).  A variety of graphs illustrate different aspects of homeschooling families.
 
 Prompt Engineering Example -- ChatGPT and Mad Libs
 ------
 
-<img height="150" src="/images/MadLibGenerated.png">
+<img height="100" src="/images/MadLibGenerated.png">
 
 Demonstrated the difference a prompt can make with ChatGPT.  Used the example of generating [Mad Libs with different prompts](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ChatGPT_MadLib_Generator.ipynb).
 

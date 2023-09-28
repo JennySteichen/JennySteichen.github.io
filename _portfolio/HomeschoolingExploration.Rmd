@@ -1,0 +1,339 @@
+---
+title: "Homeschooling"
+subtitile: "Data from National Surveys in the USA"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+#######################################################
+# Load Data
+######################################################
+
+# setwd("/home/jenny/Data/Data Science/ggplot2 Week 3")
+pfi <- drop_na(read_csv("pfi_pu_pert.csv"))
+# Imported from https://nces.ed.gov/nhes/data/2019/pfi/pfi_pu_pert.csv
+
+# Data 
+#   Parents who homeschooled their child
+#   Use HMSCHARR ==1 to restrict to full-time
+#   (not just for 1-2 classes)
+hs_dat <- pfi %>%
+  filter(HOMESCHLX==1) %>%
+  select(ALLGRADEX, HSWHOX, HSIMPONLI, HSDISSATX,TTLHHINC, 
+         HOMESCHLX, HHUNDR18X)
+
+nonhs_dat <- pfi %>%
+  filter(HOMESCHLX==0) %>%
+  select(TTLHHINC)
+
+nonhs_dat
+
+sprintf("Number of rows: %i", nrow(nonhs_dat))
+
+```
+
+
+# Introduction
+
+Homeschooling is often misunderstood, as is shown in the following meme:
+
+![](homeschoolingMeme.jpg){width=85%}
+
+In this report, we explore homeschooling and how homeschooling and 
+non-homeschooling families compare. 
+
+## What is Homeschooling?
+
+If you consider yourself a homeschooler, then
+the answer might seem obvious.  However, there are significant 
+differences in what is called homeschooling.  In my experience, the following
+are called homeschooling:
+
+* Public and private schools putting their lectures and classrooms online
+* Parents/relatives/tutors following an entire purchased curriculum
+* Parents/relatives/tutors teaching the same "pod" of students for full-time school hours.
+* Parents combining part-time online classes, homeschooling co-ops, private tutoring, reading books, watching videos, field trips, etc.
+
+The main differences are in:
+
+* Who decides the curriculum
+* Who does the teaching
+
+In this study, [students are considered homeschooled](https://nces.ed.gov/fastfacts/display.asp?id=91) if their parents reported them
+as homeschooled, their enrollment in public or private schools did not exceed 24 hours per week, 
+and they were not homeschooled due to a temporary illness.
+
+
+## Data
+
+Data came from the (USA) [National Center for Education Statistics 2019 
+Parent and Family Involvement in Education (PFI) Survey](https://nces.ed.gov/nhes/dataproducts.asp#2019dp)  
+This survey is given by the 
+US Census Bureau en every 4 years; the [next one is in 2023](https://www.census.gov/programs-surveys/nhes.html)
+while the [data will be available in late 2024](https://nces.ed.gov/nhes/).
+
+We chose data from the census study, even though the data is four years old, 
+to get a lower bound on the rate of homeschooling.  Homeschooling is most likely
+under-reported to the government.  Other data sources such as 
+[National Home Education Research Institute](https://www.nheri.org/how-many-homeschool-students-are-there-in-the-united-states-during-the-2021-2022-school-year/)
+and [Homeschool Legal Defense Association](https://hslda.org/post/census-data-shows-phenomenal-homeschool-growth)
+could have more accurate predictions, but they have incentives to report high homeschooling rates. 
+
+The Covid-19 pandemic data (that is not included here) may skew the results
+The [US Census Bureau]( https://www.census.gov/library/stories/2021/03/homeschooling-on-the-rise-during-covid-19-pandemic.html) reported that, between the spring of 2020 and the beginning of the new school year later that fall, the number of homeschooling families had doubled, to 11.1 percent of all US households. 
+It is unclear how much of this trend has maintained.
+
+## Historical Context
+
+![](abraham-lincoln-reading-with-son.jpg){width=40%}
+
+### Homeschooling is Not Just a Modern Trend
+
+Homeschooling has been practiced since the 17th century, when Europeans began colonizing and settling in North America. 
+Due to the lack of schools, parents had to assume the teaching role themselves 
+or hire a private tutor.  The founders of Plymouth Colony in 1620 required all
+parents to teach their children to read and write. 
+
+### Public Education Became Available
+
+*"Not until the latter part of the 19th century,
+however, did public elementary schools become available to all children in nearly all parts of the
+country. In 1830, about 55% of children aged 5 to 14 were enrolled in public schools; by 1870, this
+figure had risen to about 78%."* [Center for Educational Policy](https://files.eric.ed.gov/fulltext/ED606970.pdf).
+The first compulsory universal public education law went into effect in Massachusetts in 1852. 
+Mississippi was the last state to pas a law requiring school attendance in 1917.
+
+### Legality of Homeschooling
+
+Less than 10 years later in 1925, the US Supreme Court ruled that [private schools could not be outlawed](https://web.archive.org/web/20060118165335/https://www.oyez.org/oyez/resource/case/449/) .
+However, every state in the U.S. has [compulsory attendence]((https://en.wikipedia.org/wiki/Homeschooling_in_the_United_States)) laws that require that students be
+educated.  Some states consider homeschooling programs to legally be private schools.  Others have specific
+homeschooling requirements.  Since 1993, homeschooling has been legal in all 50 states.
+
+## Rate of Homeschooling
+
+This shows the trend in homeschooling rates over the years.  This trend may be lower than the actual rate due to homeschooling parents being less likely to fill out governmental forms.
+For more information on other estimates, see [How Many Homeschool Students are there in the United States during the 2021-2022 School Year?]( https://www.nheri.org/how-many-homeschool-students-are-there-in-the-united-states-during-the-2021-2022-school-year)
+
+```{r homeschoolRateTrends,echo=FALSE}
+##########################################
+# Homeschooling Rate Trends
+##########################################
+hs_rates <- tibble(rate = c(1.7,2.2,3.0,3.4,3.3, 2.8), 
+                   years = c(1999, 2003, 2007, 2011, 2015,2019))
+
+# Graph
+ggplot(hs_rates, aes(x=years,y=rate)) +
+  geom_line() +
+  labs(x="Years Surveyed", y="Rate of Homeschooling",
+       title="Estimated Rates of Homeschooling in the USA")
+  
+```
+
+
+# Reasons for Homeschooling
+
+
+Parents decide to home school their children for many different reasons.  Here are the top reasons parents gave in 2019. 
+
+```{r homeschool_reasons,echo=FALSE}
+##########################################
+# Reasons for Homeschooling
+##########################################
+
+# For saving graph to file
+# png("homeschooling_reasons.png")
+
+# Create new data set of homeschooling parents who gave a 
+#   primary reason to homeschool.  Also, replace integers
+#   with the strings they represent
+hs_imp <- filter(hs_dat, HSIMPONLI > 0)
+hs_imp$HSIMPONLI <- recode(hs_imp$HSIMPONLI,
+                     '1'="Needed Advanced Course(s)", 
+                     '2'="Needed Specialized Course(s)",
+                     '3'="Child Needed Extra Help",
+                     '4'="Child Learns Best Online",
+                     '5'="Prefers Online",
+                     '6'="Particular Online Program",
+                     '7'="Other Reason",
+                     '8'="Child Was Bullied at School",
+                     '9'="Child Has Special Needs",
+                     '11'="Concerns About Public School")
+                    
+# Plot
+ggplot(hs_imp, aes(x=HSIMPONLI, fill=HSIMPONLI))+
+  geom_bar(aes(y=100*after_stat(count)/sum(after_stat(count)))) +
+  labs(x="Reasons", y="Percent of Homeschoolers", 
+       title="Main Reason to Homeschool",
+    subtitle="According to Homeschooling Parents (2019 USA)",) +
+  theme(plot.title=element_text(size = 25),
+        plot.subtitle=element_text(size=15),
+        axis.text.x=element_text(angle = -90),
+        legend.position="none"
+        ) +
+  coord_flip()
+
+# For saving graph to file
+# dev.off()
+
+```
+
+# Aspects of Homeschooling Families
+
+How do homeschooling families look the same/different from non-homeschooling families?
+
+
+## Size of Family
+
+Note that the survey data had a maximum value of 5, although the 
+shape of the homeschooling children density seems to indicate that 
+there should be more children.
+
+```{r family_size,echo=FALSE}
+##########################################
+# Family Size
+##########################################
+
+# New data set represents all 
+#   (homeschool and non-homeschool) families.
+c_dat <- pfi %>%
+  filter(HHUNDR18X >0) %>%
+  select(HOMESCHLX, HHUNDR18X)
+c_dat$HOMESCHLX <- recode(c_dat$HOMESCHLX,'1'='homeschooled',
+                          '-1'='not homeschooled', 
+                          '2' = 'not homeschooled')
+# Graph
+ggplot(c_dat, aes(x=HHUNDR18X,color=HOMESCHLX, fill=HOMESCHLX)) +
+  geom_density(adjust=4,alpha=.3) +
+  labs(x="Number of Children in Household", y="Density",
+       title="Distribution of Number of Children in Household",
+       fill="Homeschooled?") + 
+  guides(color = guide_legend(title = "Homeschooled?"))
+```
+
+
+Parents have many different reasons for homeschooling, including dissatisfaction with 
+public school academics.  However, this does not seem to change the distribution 
+of the primary teacher for homeschooled children.
+
+## Primary Teacher
+
+The colors emphasize the same grade level as the x-axis.
+
+```{r primary_teacher,echo=FALSE}
+################################################
+# Primary Teacher
+################################################
+
+# Data Changed from integer to descriptive strings
+#    LEVEL is new column that represents grade level
+hs_dat$HSWHOX <- recode(hs_dat$HSWHOX, '1'="Mother", 
+                        '2'="Father",'3'="Grandparent",'
+                        4'="Sibling", '5'="Online teacher",
+                        '6'="Other", '7'= "In-person teacher")
+hs_dat$LEVEL <- hs_dat$ALLGRADEX - 2
+hs_dat$HSDISSATX <- recode(hs_dat$HSDISSATX, 
+                        '1'="Parents Unhappy with School Academics",
+                        '2'="Parents Happy with School Academics")
+
+# Plot
+ggplot(hs_dat, aes(x=LEVEL,y=HSWHOX, color=LEVEL))+
+  geom_jitter(height=.2) + 
+  labs(x="Grade Level", y="Main Teacher", 
+       title="Main Homeschool Teacher",
+       subtitle="For Children Homeschooled in the USA in 2019") +
+  guides(fill="none") +
+  theme(plot.title=element_text(size = 25),
+        plot.subtitle=element_text(size=15),
+        legend.position="none") +
+  facet_wrap(~HSDISSATX)
+
+```
+
+
+## Household Income
+
+Homeschooling families have a wide spread of household income.
+
+```{r household_income,echo=FALSE}
+######################################
+# Household Income
+######################################
+
+# Create new data set containing numeric upper bound on salary
+hs_dat$INCOMENUM <- as.numeric(
+  recode(hs_dat$TTLHHINC, '1'='010', '2'='020','3'='030', 
+         '4'='040','5'='050', '6'='060', '7'='075', '8'='100',
+         '9'='150', '10'='200', '11'='250','12'='300'))
+nonhs_dat$INCOMENUM <- as.numeric(
+  recode(nonhs_dat$TTLHHINC, '1'='010', '2'='020','3'='030', 
+         '4'='040','5'='050', '6'='060', '7'='075', '8'='100',
+         '9'='150', '10'='200', '11'='250','12'='300'))
+
+m = median(hs_dat$INCOMENUM)
+# nonhs_med = median(nonhs_dat$INCOMENUM)
+# sprintf("Homeschooling and non-homeschooling medians %f %f", m, nonhs_med)
+
+hs_fullinc <- select(hs_dat, INCOMENUM)
+
+# To get an approximate distribution, we want to approximate the distribution uniformly on its interval, then round to the nearest 10k. The incomes up to $60,000 are already distributed this way
+hs_disp <- filter(hs_fullinc, INCOMENUM < 70)
+
+#   Loop through the income values that are separated 
+#     by more than 10
+#     e.g. values at $75,000 are evenly dist over (61,75) and 
+#         rounded to the nearest 10
+set.seed(1)
+for (values in list(c(75,61,75), c(100,76,100), 
+                    c(150,101,150), c(200,151,200), 
+                    c(250,201,250), c(300,251,300))) {
+  num = values[1]
+  start_val = values[2]
+  end_val = values[3]
+  tmp_dat <- filter(hs_fullinc, INCOMENUM == num)
+  table(tmp_dat)
+  tmp_vec <- round(runif(length(tmp_dat$INCOMENUM),
+                         start_val, end_val), -1)
+  tmp_dat$INCOMENUM <- tmp_vec
+  hs_disp <- rbind(hs_disp,tmp_dat)
+}
+
+# Graph Income Distribution
+ggplot(hs_disp, aes(x=INCOMENUM)) +
+  geom_bar() +
+  ggthemes::theme_economist() +
+  labs(x="Annual Household Income (thousands of dollars)",
+       y="Number of Surveyed Families", 
+       title="Household Income of Homeschooling Families") +
+  annotate("segment",x=m,xend=m,y=50,yend=40,
+           color="blue",arrow=arrow()) +
+  annotate("text",x=m+5,y=52, label="median", color="blue") 
+  #annotate("segment",x=nonhs_med + 20,xend=nonhs_med + 20,y=50,yend=40,
+  #         color="blue",arrow=arrow()) 
+  # annotate("text",x=nonhs_med+5,y=52, label="median", color="brown") 
+
+```
+
+## Student Achievement
+However, its difficult to counter the bias in such studies.  Sources of bias include:
+- All public school students are required to take standardized tests, and most homeschoolers are not required.
+Homeschoolers who expect to score low may avoid the tests.
+- In New York State, homeschoolers (required to take standardized tests each year) 
+are put on probation if they score lower than 33rd percentile.  Once on probation, a homeschooling program has greater oversight.
+- Public school students take standardized tests once per year.  Homeschooling students could take the tests every month, 
+if they liked.  
+
+
+# Conclusion
+
+Problems with this study:
+
+* Homeschooling has different definitions to different people.
+* We chose government databases to get a lower bound on homeschooling rates.
+Due to fear of government interference in their homeschooling program, 
+homeschoolers seem less likely to return the surveys.  
+
