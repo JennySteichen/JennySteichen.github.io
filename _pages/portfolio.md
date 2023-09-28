@@ -12,7 +12,7 @@ redirect_from:
 
 Generating Music with an LSTM
 -----
-<img height="100" src="/images/drum_kit.jpg">
+<img height="100" src="/images/drumkit.jpg">
 
 We develop a model to improvise  percussion music ([code download](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusic.ipynb) or [display notebook without output](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusicWithoutOutput.ipynb). The entire file is too large to display on Github).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model](https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
 
