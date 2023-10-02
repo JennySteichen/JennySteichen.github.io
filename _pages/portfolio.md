@@ -10,9 +10,16 @@ redirect_from:
   - /portfolio.html
 ---
 
-Generating Music with an LSTM
+Individualized Learning with Bayesian Knowledge Tracing
 -----
-<img height="100" src="/images/drumkit.jpg">
+
+<img height="100" src="/images/BKT.png">
+
+Bayesian Knowledge Tracing (BKT) is a probabilistic model used in educational data mining (EDM).  The BKT model is a Hidden Markov Model that estimates learners' knowledge over time.  Data is gathered from learners interacting with a system, included whether they get a problem correct or not.  BKT empowers teachers to identify struggling students, design personalized interventions, and improve learning outcomes.  In this example, we [implement Bayesian Knowledge Tracing](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/BayesianKnowledgeTracing.ipynb) with the [pyBKT Python library](https://pypi.org/project/pyBKT/), described in the [paper by Bulut et al](https://www.mdpi.com/2624-8611/5/3/50/htm).
+
+Generating Music with Deep Learning
+-----
+<img height="75" src="/images/drumkit.jpg">
 
 We develop a model to improvise  percussion music ([code download](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusic.ipynb) or [display notebook without output](https://github.com/JennySteichen/JennySteichen.github.io/blob/master/_portfolio/ImprovisePercussionMusicWithoutOutput.ipynb). The entire file is too large to display on Github).  Since music is sequential, we use a specialized Recurrent Neural Network (RNN) called a [LSTM model](https://en.wikipedia.org/wiki/Long_short-term_memory) (Long short-term Memory) Model to learn the patterns of musical sequences.  We then use these learned patterns to generate new music. 
 
